@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أبيات شعرية وموقع مطور</title>
+    <style>
+        /* إعدادات الخلفية والألوان الفاخرة المريحة للعين */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d1b2a;
+            color: #e0e1dd;
+            text-align: center;
+            padding: 40px 20px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 90vh;
+        }
+
+        /* تنسيق جملة الترحيب */
+        h1 { 
+            color: #e5ba73; 
+            font-size: 36px;
+            margin-bottom: 25px;
+        }
+
+        /* تنسيق أبيات الشعر لتبدو منسقة ومتحاذية */
+        .poem-container {
+            max-width: 600px;
+            line-height: 2;
+            font-size: 20px;
+            color: #adc178;
+            background-color: #1b263b;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+        }
+
+        .poem-line {
+            margin-bottom: 15px;
+        }
+
+        /* تصميم وتنشيط القلب النابض */
+        .heart-container {
+            margin: 30px 0;
+        }
+
+        .heart {
+            position: relative;
+            width: 70px;
+            height: 70px;
+            background-color: #e63946;
+            transform: rotate(-45deg);
+            animation: beat 0.8s infinite alternate;
+            box-shadow: 0 0 20px rgba(230, 57, 70, 0.6);
+        }
+
+        .heart::before,
+        .heart::after {
+            content: "";
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            background-color: #e63946;
+            border-radius: 50%;
+        }
+
+        .heart::before { top: -35px; left: 0; }
+        .heart::after { top: 0; left: 35px; }
+
+        @keyframes beat {
+            0% { transform: rotate(-45deg) scale(1); }
+            100% { transform: rotate(-45deg) scale(1.15); }
+        }
+
+        /* تصميم زر تفاعلي */
+        button {
+            background-color: #e5ba73;
+            color: #0d1b2a;
+            border: none;
+            padding: 12px 28px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(229, 186, 115, 0.3);
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background-color: #ffffff;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- عنوان الموقع -->
+    <h1>أهلاً بك ✨</h1>
+
+    <!-- صندوق أبيات الشعر -->
+    <div class="poem-container">
+        <div class="poem-line">لاَ تشكُ لِلنَاسِ جَرَحًا أنتَ صَاحِبُهُ</div>
+        <div class="poem-line">لا يُؤْلِمُ الجَرَحَ إِلا مَنّ بِهِ أَلَمُ</div>
+        <div class="poem-line">شَكوَاكَ لِلنَاسِ يَسَ ٱلنَاسِ مَنقَصَة</div>
+        <div class="poem-line">وَمَن مِنَ النَاسِ صَاحِ مَابهِ سَقَمُ</div>
+        <div class="poem-line">فَالهَمَ كَالسَيْلِ وَالأحْزَانِ زَاخِرة</div>
+        <div class="poem-line">حُمُ الدَلائِل مَهَمَا أهَلِهَا كَتَمُوا</div>
+        <div class="poem-line">فإن شَكَوتَ لِن طابَ الرَمَانَ لهُ</div>
+        <div class="poem-line">عَيَاك تَعْليَ وَمَنْ تَشْكَوْلهُ صَدْمُ</div>
+    </div>
+    
+    <!-- شكل القلب النابض -->
+    <div class="heart-container">
+        <div class="heart"></div>
+    </div>
+
+    <!-- زر التفاعل -->
+    <button onclick="alert('منور موقعي الشعري المطور! 🌟')">اضغط هنا</button>
+
+</body>
+</html>
